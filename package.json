@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "vendor:three": "node work/vendor-three.cjs"
+  },
+  "dependencies": {
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0"
+  }
+}

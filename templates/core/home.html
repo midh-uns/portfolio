@@ -1,0 +1,283 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="S Midhun - Python and Django developer portfolio from Trivandrum, Kerala.">
+  <title>S Midhun | Python Django Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+</head>
+<body>
+  <div class="splash-screen" aria-hidden="true">
+    <div class="splash-name">S MIDHUN</div>
+    <div class="splash-role">Python Developer</div>
+  </div>
+
+  <div class="scroll-stage" aria-hidden="true">
+    <div class="stage-panel panel-one"></div>
+    <div class="stage-panel panel-two"></div>
+    <div class="stage-panel panel-three"></div>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="S Midhun portfolio home">
+      <span class="brand-mark">SM</span>
+      <span>S Midhun</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <!-- <a href="#contact">Contact</a> -->
+    </nav>
+    <a class="nav-cta" href="{% static 'core/files/s_midhun_resume.pdf' %}" download>Resume</a>
+  </header>
+
+  <main id="home">
+    <section class="hero cinematic-section">
+      <div class="coding-reel" aria-hidden="true">
+        <div class="reel-column reel-a">
+          <span>def upload_excel(request):</span>
+          <span>serializer.is_valid()</span>
+          <span>Report.objects.create()</span>
+          <span>return JsonResponse(data)</span>
+        </div>
+        <div class="reel-column reel-b">
+          <span>class Product(models.Model):</span>
+          <span>cart.total += item.price</span>
+          <span>send_mail(order_confirmed)</span>
+          <span>queryset.filter(category)</span>
+        </div>
+        <div class="reel-column reel-c">
+          <span>REST_FRAMEWORK = {...}</span>
+          <span>npm run build</span>
+          <span>git commit -m "ship"</span>
+          <span>pytest -q</span>
+        </div>
+      </div>
+      <div class="hero-copy scroll-fade">
+        <p class="eyebrow">Trivandrum, Kerala - Python | Django | REST APIs</p>
+        <h1>Python developer building clean web apps with cinematic polish.</h1>
+        <p class="hero-text">
+          I am S Midhun, a Python and Django developer focused on scalable web applications,
+          REST API integration, MySQL-backed systems, and responsive interfaces that feel sharp on every screen.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore Work</a>
+          <a class="button ghost" href="{% static 'core/files/s_midhun_resume.pdf' %}" download>Download Resume</a>
+        </div>
+        <div class="metrics" aria-label="Portfolio highlights">
+          <div><strong>2026</strong><span>Django intern at Geosys</span></div>
+          <div><strong>3</strong><span>featured projects</span></div>
+          <div><strong>B.Tech</strong><span>Computer Science</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual scroll-fade" aria-label="Animated 3D developer workspace">
+        <canvas id="hero-canvas"></canvas>
+        <div class="fallback-workspace" aria-hidden="true">
+          <span class="terminal-card terminal-main">manage.py</span>
+          <span class="terminal-card terminal-api">DRF</span>
+          <span class="terminal-card terminal-db">MySQL</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#intro" aria-label="Scroll for more content">
+        <span>Scroll for more content</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section id="intro" class="story-panel cinematic-section">
+      <div class="story-media scroll-fade">
+        <div class="code-window">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <pre><code>class Developer:
+    name = "S Midhun"
+    stack = ["Python", "Django", "DRF"]
+    focus = "Reliable full-stack web apps"</code></pre>
+        </div>
+      </div>
+      <div class="story-copy scroll-fade">
+        <p class="eyebrow">Profile summary</p>
+        <h2>Clean backend logic. Responsive frontend craft.</h2>
+        <p>
+          Motivated Python Developer with a B.Tech in Computer Science and Engineering, skilled in
+          Python, HTML, CSS, Bootstrap, Django, Django REST Framework, React, and MySQL. I enjoy
+          turning structured requirements into reliable software that is easy to use and maintain.
+        </p>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Technology stack">
+      <div class="marquee-track">
+        <span>Python</span><span>Django</span><span>Django REST Framework</span><span>MySQL</span><span>React</span><span>Bootstrap</span><span>GitHub</span><span>Postman</span>
+        <span>Python</span><span>Django</span><span>Django REST Framework</span><span>MySQL</span><span>React</span><span>Bootstrap</span><span>GitHub</span><span>Postman</span>
+      </div>
+    </section>
+
+    <section id="work" class="portfolio-section section-reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Selected projects</p>
+        <h2>Resume-backed builds with real product flows.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card tilt-card">
+          <span class="project-index">01</span>
+          <h3>Campus Store</h3>
+          <p>Campus-exclusive e-commerce platform for browsing, wishlisting, cart, checkout, COD and online payment support, role-based admin/user access, Gmail SMTP emails, and geolocation-based discovery.</p>
+          <div class="tags"><span>Django</span><span>MySQL</span><span>Payments</span><span>SMTP</span></div>
+        </article>
+        <article class="project-card tilt-card">
+          <span class="project-index">02</span>
+          <h3>Food Ordering Website</h3>
+          <p>Full-stack Django food ordering app with menu browsing, account management, user authentication, order management, dynamic rendering, and responsive Bootstrap interfaces.</p>
+          <div class="tags"><span>Python</span><span>Django</span><span>Bootstrap</span><span>MVT</span></div>
+        </article>
+        <article class="project-card tilt-card">
+          <span class="project-index">03</span>
+          <h3>RAG AI Chatbot</h3>
+          <p>Retrieval-Augmented Generation chatbot backend designed for domain-specific answers, vector database retrieval, and optimized context handling for accurate responses.</p>
+          <div class="tags"><span>AI</span><span>Python</span><span>Vector DB</span><span>RAG</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="portfolio-section split-section section-reveal">
+      <div>
+        <p class="eyebrow">Technical stack</p>
+        <h2>Practical full-stack tools for Django products.</h2>
+        <p class="section-copy">
+          My stack covers backend development, API design, database integration, responsive UI, API testing,
+          and AI-assisted productivity tools used carefully as part of the development workflow.
+        </p>
+      </div>
+      <div class="skill-cloud">
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <span>Python</span><span>Java</span><span>JavaScript</span>
+        </div>
+        <div class="skill-group">
+          <h3>Web and API</h3>
+          <span>Django</span><span>Django REST Framework</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>React</span>
+        </div>
+        <div class="skill-group">
+          <h3>Data and backend</h3>
+          <span>MySQL</span><span>Excel upload workflows</span><span>PDF report generation</span><span>Visual analytics</span>
+        </div>
+        <div class="skill-group">
+          <h3>Tools and platforms</h3>
+          <span>Git</span><span>GitHub</span><span>Postman</span><span>Thunder Client</span><span>Jupyter Notebook</span><span>Visual Studio Code</span>
+        </div>
+        <div class="skill-group">
+          <h3>AI tools</h3>
+          <span>ChatGPT</span><span>Gemini AI</span><span>Claude AI</span><span>Copilot</span><span>Bolt AI</span>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <span>Malayalam - Native</span><span>English - Fluent</span><span>German - Basics</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="portfolio-section section-reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Internship work shaped by real development cycles.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item active">
+          <span>Jun 2026 - Present</span>
+          <h3>Python Django Developer Intern</h3>
+          <p>Geosys IT Solutions Pvt Ltd, Trivandrum. Building Django applications, Excel upload and validation workflows, automated PDF reports, visual analytics, and responsive UI components.</p>
+        </article>
+        <article class="timeline-item">
+          <span>Nov 2025 - May 2026</span>
+          <h3>Python Full Stack Developer Intern</h3>
+          <p>Luminar Technolab, Trivandrum. Developed dynamic web apps using Python, Django, HTML, CSS, JavaScript, and MySQL while collaborating on REST API design and UI integration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="portfolio-section education-section section-reveal">
+      <div>
+        <p class="eyebrow">Education</p>
+        <h2>Academic path behind the code.</h2>
+      </div>
+      <div class="education-list">
+        <article class="education-card">
+          <span>2023</span>
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <p>Mohandas College of Engineering and Technology, Kerala.</p>
+        </article>
+        <article class="education-card">
+          <span>2019</span>
+          <h3>Higher Secondary Education - 12th</h3>
+          <p>ST Mary's Central School, Kerala.</p>
+        </article>
+        <article class="education-card">
+          <span>2017</span>
+          <h3>Secondary School Education - 10th</h3>
+          <p>ST Mary's Central School, Kerala.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio-section credentials section-reveal">
+      <div>
+        <p class="eyebrow">Certifications</p>
+        <h2>Always learning, always shipping.</h2>
+      </div>
+      <div class="credential-list">
+        <span>Java Full Stack - Scope India</span>
+        <span>Python with Data Science - Quest Innovative Solutions</span>
+        <span>The AI Engineer Course - Udemy</span>
+        <span>SQL Basic - HackerRank, Apr 2026</span>
+        <span>Python Basic - HackerRank, Apr 2026</span>
+      </div>
+    </section>
+
+    <!-- <section id="contact" class="contact-section section-reveal">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something reliable and sharp.</h2>
+        <p>Available for Python, Django, REST API, MySQL, and responsive web application work.</p>
+        <div class="contact-links">
+          <a href="mailto:midhuns6371@gmail.com">midhuns6371@gmail.com</a>
+          <a href="tel:+919633593242">+91 9633593242</a>
+          <a href="https://linkedin.com/in/midhuns1">linkedin.com/in/midhuns1</a>
+        </div>
+      </div>
+      <form class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Your name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="you@example.com">
+        </label>
+        <label>
+          <span>Project</span>
+          <textarea rows="4" placeholder="Tell me what you want to build"></textarea>
+        </label>
+        <button class="button primary" type="button">Send Message</button>
+      </form>
+    </section> -->
+  </main>
+
+  <footer>
+    <span>S Midhun - Python Developer</span>
+    <span>Trivandrum, Kerala, India</span>
+  </footer>
+
+  <script type="module" src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
